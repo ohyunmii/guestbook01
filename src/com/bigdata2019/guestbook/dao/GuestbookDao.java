@@ -107,7 +107,7 @@ public class GuestbookDao {
 
 			while (rs.next()) {
 				GuestbookVo vo = new GuestbookVo();
-				vo.setNoLong(rs.getLong(1));
+				vo.setNo(rs.getLong(1));
 				vo.setName(rs.getString(2));
 				vo.setContents(rs.getString(3));
 				vo.setRegDate(rs.getString(4));

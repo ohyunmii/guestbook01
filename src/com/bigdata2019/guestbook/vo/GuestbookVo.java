@@ -1,16 +1,26 @@
 package com.bigdata2019.guestbook.vo;
 
 public class GuestbookVo {
-	private Long noLong;
+	private Long no;
 	private String name;
 	private String password;
 	private String contents;
 	private String regDate;
-	public Long getNoLong() {
-		return noLong;
+	
+	public GuestbookVo() {
 	}
-	public void setNoLong(Long noLong) {
-		this.noLong = noLong;
+	
+	public GuestbookVo(String name, String password, String contents) {
+		this.name = name;
+		this.password = password;
+		this.contents = contents;
+	}
+	
+	public Long getNo() {
+		return no;
+	}
+	public void setNo(Long no) {
+		this.no = no;
 	}
 	public String getName() {
 		return name;
@@ -40,7 +50,7 @@ public class GuestbookVo {
 	
 	@Override
 	public String toString() {
-		return "GuestbookVo [noLong=" + noLong + ", name=" + name + ", password=" + password + ", contents=" + contents
+		return "GuestbookVo [no=" + no + ", name=" + name + ", password=" + password + ", contents=" + contents
 				+ ", regDate=" + regDate + "]";
 	}
 	
